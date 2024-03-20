@@ -568,7 +568,16 @@ p {
 	color: white;
 	font-size: 1.3rem;
 }
+.privacy_policy {
+	color: white;
+}
 /* End Footer */
+
+/* Privacy Policy */
+.privacy_title {
+	font-size: 30px;
+}
+/* End Privacy Policy */
 
 /* Keyframes */
 @keyframes hamburger_puls {
