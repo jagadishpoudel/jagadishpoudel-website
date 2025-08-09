@@ -234,23 +234,29 @@
         }
         
         .app-info {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1rem;
             margin: 2rem 0;
         }
         
         .app-card {
-            flex: 1 1 300px;
             border: 1px solid var(--border-color);
             border-radius: 8px;
             padding: 1rem;
             background-color: #f9f9f9;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .app-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
         }
         
         .app-card h3 {
             color: var(--accent-color);
             margin-top: 0;
+            margin-bottom: 0.5rem;
         }
         
         .footer {
@@ -309,6 +315,10 @@
             
             h2 {
                 font-size: 1.5rem;
+            }
+            
+            .app-info {
+                grid-template-columns: 1fr;
             }
         }
         
@@ -379,13 +389,17 @@
         
         <section id="introduction">
             <h2>Introduction</h2>
-            <p>Welcome to JagaByte Technologies, founded and led by CEO Jagadish Poudel. At JagaByte Technologies, we prioritize the privacy of our users. This Privacy Policy document outlines the types of information we collect through our apps, including <strong>CSIT Paper Pro</strong>, <strong>Quotivation - Daily Inspiration</strong>, <strong>Privacy Plus</strong> and <strong>Flutter Handbook</strong>, and explains how we use this information.</p>
+            <p>Welcome to JagaByte Technologies, founded and led by CEO Jagadish Poudel. At JagaByte Technologies, we prioritize the privacy of our users. This Privacy Policy document outlines the types of information we collect through our apps, including <strong>CSIT Paper Pro</strong>, <strong>BCA Paper Pro</strong>, <strong>Quotivation - Daily Inspiration</strong>, <strong>Privacy Plus</strong>, <strong>Flutter Handbook</strong>, and <strong>Luvlines</strong>, and explains how we use this information.</p>
             <p>If you have additional questions or require more information about our Privacy Policy, please don't hesitate to contact us.</p>
             
             <div class="app-info">
                 <div class="app-card">
                     <h3>CSIT Paper Pro</h3>
                     <p>An educational application providing access to Computer Science and Information Technology resources, past papers, and study materials.</p>
+                </div>
+                <div class="app-card">
+                    <h3>BCA Paper Pro</h3>
+                    <p>A mobile application providing Bachelor of Computer Applications (BCA) students with complete academic resources including past exam questions, subject-wise syllabi for all semesters, and exam preparation materials with an intuitive interface and offline-friendly access.</p>
                 </div>
                 <div class="app-card">
                     <h3>Quotivation - Daily Inspiration</h3>
@@ -398,6 +412,10 @@
                 <div class="app-card">
                     <h3>Flutter Handbook</h3>
                     <p>A comprehensive mobile guide to learning Flutter, featuring categorized widget examples, explanations, and usage tips for both beginners and advanced developers.</p>
+                </div>
+                <div class="app-card">
+                    <h3>Luvlines</h3>
+                    <p>A fun and interactive mobile application featuring over 50 unique flirt messages across 10 well-organized categories, allowing users to share creative and playful romantic content with beautiful message cards and social sharing features.</p>
                 </div>                
             </div>
         </section>
@@ -409,6 +427,7 @@
             <p>If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
             <p>When you register for an account within our apps, we may ask for your contact information, including items such as name, email address, and other relevant details.</p>
             <p>For our Privacy Plus app specifically, we may collect anonymized usage data to improve our privacy tips and recommendations, but we do not access, store, or process the actual content of your chats or messages.</p>
+            <p>For our Luvlines app, we may collect anonymized usage statistics to understand which message categories are most popular and to improve the user experience, but we do not collect or store any personal messages you create or share.</p>
         </section>
         
         <section id="information-usage">
@@ -423,6 +442,7 @@
                 <li>Send you emails and notifications</li>
                 <li>Find and prevent fraud</li>
                 <li>Enhance privacy and security features in our Privacy Plus application</li>
+                <li>Improve content recommendations and user experience across all our applications</li>
             </ul>
         </section>
         
@@ -439,7 +459,7 @@
         <section id="third-party">
             <h2>Third-Party Services</h2>
             <p>We may use third-party advertising services to serve ads to you. These third-party services may collect information about your visits to our applications, other websites, or apps, including your device information, IP address, location, and browser type.</p>
-            <p>Our apps (CSIT Paper Pro, Quotivation - Daily Inspiration, and Privacy Plus) may use the following third-party services:</p>
+            <p>Our apps (CSIT Paper Pro, BCA Paper Pro, Quotivation - Daily Inspiration, Privacy Plus, Flutter Handbook, and Luvlines) may use the following third-party services:</p>
             <ul>
                 <li><a href="https://policies.google.com/privacy" target="_blank">Google Play Services</a></li>
                 <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank">AdMob</a></li>
@@ -486,6 +506,7 @@
             <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
             <p>JagaByte Technologies does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our apps, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
             <p>Our Privacy Plus app includes educational content about online safety that may be particularly valuable for parents and guardians who wish to help protect their children's privacy online.</p>
+            <p>For apps like Luvlines that contain romantic content, we recommend parental guidance and supervision for users under 18 years of age.</p>
         </section>
         
         <section id="changes">
