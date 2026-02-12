@@ -1,14 +1,17 @@
 import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Projects", href: "/projects" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -26,20 +29,24 @@ const Navbar = () => {
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <a href="#hero" className="font-display text-3xl font-bold text-foreground">
+        <Link to="/" className="font-display text-3xl font-bold text-foreground hover:text-primary transition-colors">
           JP
-        </a>
+        </Link>
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
-              href={link.href}
-              className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm tracking-wide uppercase"
+              to={link.href}
+              className={`text-sm tracking-wide uppercase transition-colors duration-200 ${
+                location.pathname === link.href
+                  ? "text-primary font-semibold"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <a
             href="/cv_jagadish.pdf"
@@ -79,14 +86,18 @@ const Navbar = () => {
       {menuOpen && (
         <div className="md:hidden bg-background/95 backdrop-blur-md border-t border-border px-6 py-6 flex flex-col gap-4">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
-              href={link.href}
+              to={link.href}
               onClick={() => setMenuOpen(false)}
-              className="text-foreground text-lg"
+              className={`text-lg transition-colors ${
+                location.pathname === link.href
+                  ? "text-primary font-semibold"
+                  : "text-foreground"
+              }`}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <a
             href="/cv_jagadish.pdf"
