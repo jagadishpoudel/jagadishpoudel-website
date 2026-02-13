@@ -2,6 +2,15 @@ import { motion } from "framer-motion";
 
 const ease = [0.215, 0.61, 0.355, 1] as const;
 
+const socials = [
+  { label: "GitHub", href: "https://github.com/jagadishpoudel" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/jagadish-poudel/" },
+  { label: "Play Store", href: "https://play.google.com/store/apps/dev?id=4658001568577208018" },
+  { label: "Facebook", href: "https://www.facebook.com/jagadishpoudel50" },
+  { label: "YouTube", href: "https://www.youtube.com/@codingwithjagadish" },
+  { label: "+977 9866634875", href: "tel:+9779866634875" },
+];
+
 const Contact = () => {
   const titleChars = "Let's Connect".split("");
 
@@ -84,15 +93,23 @@ const Contact = () => {
           </motion.div>
 
           <motion.div
-            className="flex items-center justify-center gap-6 text-muted-foreground font-body text-sm"
+            className="flex flex-wrap items-center justify-center gap-4 text-muted-foreground font-body text-sm"
             variants={fadeUp(1.2)}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline underline-offset-4">GitHub</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline underline-offset-4">LinkedIn</a>
-            <a href="tel:+9779866634875" className="hover:text-foreground transition-colors underline underline-offset-4">+977 9866634875</a>
+            {socials.map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                target={s.href.startsWith("tel") ? undefined : "_blank"}
+                rel="noopener noreferrer"
+                className="hover:text-foreground transition-colors underline underline-offset-4"
+              >
+                {s.label}
+              </a>
+            ))}
           </motion.div>
 
           <motion.div
