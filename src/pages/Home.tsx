@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import heroIllustration from "@/assets/hero-illustration.png";
+import profilePhoto from "@/assets/jagadish-profile.jpg";
 
 const ease = [0.215, 0.61, 0.355, 1] as const;
 
@@ -35,6 +35,14 @@ const Home = () => {
 
   const titleLine1 = "Flutter Developer &";
   const titleLine2 = "App Enthusiast";
+
+  const socials = [
+    { label: "GitHub", href: "https://github.com/jagadishpoudel" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/jagadish-poudel/" },
+    { label: "Play Store", href: "https://play.google.com/store/apps/dev?id=4658001568577208018" },
+    { label: "YouTube", href: "https://www.youtube.com/@codingwithjagadish" },
+    { label: "Email", href: "mailto:jpoudel974@gmail.com" },
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -116,13 +124,14 @@ const Home = () => {
               variants={fadeUp}
               initial="hidden"
               animate="visible"
-              className="flex items-center gap-5 text-sm text-muted-foreground font-body"
+              className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground font-body"
             >
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline underline-offset-4">GitHub</a>
-              <span className="text-border">/</span>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline underline-offset-4">LinkedIn</a>
-              <span className="text-border">/</span>
-              <a href="mailto:jpoudel974@gmail.com" className="hover:text-foreground transition-colors underline underline-offset-4">Email</a>
+              {socials.map((s, i) => (
+                <span key={s.label} className="flex items-center gap-3">
+                  <a href={s.href} target={s.href.startsWith("mailto") ? undefined : "_blank"} rel="noopener noreferrer" className="hover:text-foreground transition-colors underline underline-offset-4">{s.label}</a>
+                  {i < socials.length - 1 && <span className="text-border">/</span>}
+                </span>
+              ))}
             </motion.div>
           </div>
 
@@ -134,8 +143,8 @@ const Home = () => {
           >
             <div className="w-72 h-72 md:w-96 md:h-96 rounded-full bg-card border border-border flex items-center justify-center overflow-hidden shadow-lg">
               <img
-                src={heroIllustration}
-                alt="Jagadish Poudel illustration"
+                src={profilePhoto}
+                alt="Jagadish Poudel"
                 className="w-full h-full object-cover"
               />
             </div>
