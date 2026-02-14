@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience - Jagadish Poudel</title>
+  <meta name="description" content="Experience - Jagadish Poudel" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">JP</a>
+      
+      <div class="navbar-menu">
+        <a href="index.html" class="nav-link" onclick="closeMenu()">Home</a>
+        <a href="about.html" class="nav-link" onclick="closeMenu()">About</a>
+        <a href="projects.html" class="nav-link" onclick="closeMenu()">Projects</a>
+        <a href="experience.html" class="nav-link active" onclick="closeMenu()">Experience</a>
+        <a href="contact.html" class="nav-link" onclick="closeMenu()">Contact</a>
+        <a href="public/cv_jagadish.pdf" class="resume-btn" target="_blank" rel="noopener noreferrer">Resume ↗</a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Experience Section -->
+  <section class="experience-section">
+    <div class="container">
+      <h1 class="section-title">Experience</h1>
+      <p class="section-subtitle fade-in-on-scroll">My professional journey in Flutter development, mentoring, and community building.</p>
+
+      <div class="experience-content">
+        <div class="experience-subsection">
+          <h2 class="subsection-title">Work & Roles</h2>
+          <div class="timeline">
+            <div class="timeline-item fade-in-on-scroll">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content card">
+                <div class="experience-header">
+                  <h3 class="experience-title">Independent Flutter Developer</h3>
+                  <span class="experience-period">2023 – Present</span>
+                </div>
+                <p class="experience-company">Freelance / Self-Employed</p>
+                <p class="experience-description">
+                  Designing, developing, and publishing cross-platform mobile applications on Google Play Store. Building real-world apps with clean architecture, Riverpod/BLoC state management, Firebase backend, and beautiful UI/UX.
+                </p>
+                <div class="experience-tags">
+                  <span class="tag">Flutter</span>
+                  <span class="tag">Dart</span>
+                  <span class="tag">Firebase</span>
+                  <span class="tag">Riverpod</span>
+                  <span class="tag">Play Store</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item fade-in-on-scroll">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content card">
+                <div class="experience-header">
+                  <h3 class="experience-title">Flutter Developer Intern</h3>
+                  <span class="experience-period">Nov 2023 – Feb 2024</span>
+                </div>
+                <p class="experience-company">Thulo Technology Pvt. Ltd.</p>
+                <p class="experience-description">
+                  Worked on production Flutter applications, collaborated with senior developers, and gained hands-on experience with REST APIs, state management patterns, and agile development workflows.
+                </p>
+                <div class="experience-tags">
+                  <span class="tag">Flutter</span>
+                  <span class="tag">REST APIs</span>
+                  <span class="tag">Agile</span>
+                  <span class="tag">Team Collaboration</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item fade-in-on-scroll">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content card">
+                <div class="experience-header">
+                  <h3 class="experience-title">Flutter Mentor & Community Builder</h3>
+                  <span class="experience-period">2023 – Present</span>
+                </div>
+                <p class="experience-company">Community / Workshops</p>
+                <p class="experience-description">
+                  Mentoring aspiring Flutter developers through workshops, training sessions, and online content. Helping grow the developer community in Nepal through knowledge sharing.
+                </p>
+                <div class="experience-tags">
+                  <span class="tag">Mentoring</span>
+                  <span class="tag">Workshops</span>
+                  <span class="tag">YouTube</span>
+                  <span class="tag">Community</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-subsection">
+          <h2 class="subsection-title">Education</h2>
+          <div class="education-item card fade-in-on-scroll">
+            <h3 class="education-degree">BSc. Computer Science & Information Technology (CSIT)</h3>
+            <p class="education-institution">Tribhuvan University, Nepal</p>
+            <p class="education-period">2022 – Present</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

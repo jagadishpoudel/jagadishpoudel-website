@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Jagadish Poudel</title>
+  <meta name="description" content="About Jagadish Poudel - Flutter Developer" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">JP</a>
+      
+      <div class="navbar-menu">
+        <a href="index.html" class="nav-link" onclick="closeMenu()">Home</a>
+        <a href="about.html" class="nav-link active" onclick="closeMenu()">About</a>
+        <a href="projects.html" class="nav-link" onclick="closeMenu()">Projects</a>
+        <a href="experience.html" class="nav-link" onclick="closeMenu()">Experience</a>
+        <a href="contact.html" class="nav-link" onclick="closeMenu()">Contact</a>
+        <a href="public/cv_jagadish.pdf" class="resume-btn" target="_blank" rel="noopener noreferrer">Resume ↗</a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container">
+      <h1 class="section-title">About</h1>
+      
+      <p class="section-text fade-in-on-scroll">
+        I'm a passionate Flutter developer from Nepal, currently pursuing my BSc in Computer Science and IT
+        (CSIT). With a deep love for building beautiful and functional mobile applications, I've been exploring
+        the Flutter ecosystem for the past few years.
+      </p>
+
+      <p class="section-text fade-in-on-scroll">
+        Beyond coding, I'm committed to giving back to the community. I mentor aspiring developers, contribute to
+        open-source projects, and share knowledge through talks and workshops.
+      </p>
+
+      <div class="about-subsection">
+        <h2 class="subsection-title">Skills & Expertise</h2>
+        <div class="skills-grid">
+          <div class="skill-card fade-in-on-scroll">
+            <p class="skill-label">Core</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Flutter</span>
+              <span class="skill-tag">Dart</span>
+              <span class="skill-tag">Firebase</span>
+            </div>
+          </div>
+          <div class="skill-card fade-in-on-scroll">
+            <p class="skill-label">State Management</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Provider</span>
+              <span class="skill-tag">Riverpod</span>
+              <span class="skill-tag">BLoC</span>
+            </div>
+          </div>
+          <div class="skill-card fade-in-on-scroll">
+            <p class="skill-label">Design</p>
+            <div class="skill-tags">
+              <span class="skill-tag">UI/UX</span>
+              <span class="skill-tag">Responsive</span>
+              <span class="skill-tag">Material Design</span>
+            </div>
+          </div>
+          <div class="skill-card fade-in-on-scroll">
+            <p class="skill-label">Backend</p>
+            <div class="skill-tags">
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">Real-time DBs</span>
+              <span class="skill-tag">Cloud Functions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-subsection">
+        <h2 class="subsection-title">Why Flutter?</h2>
+        <div class="why-flutter-content fade-in-on-scroll">
+          <p>
+            Flutter allows me to build beautiful, natively compiled applications for mobile, web, and desktop
+            from a single codebase. The hot reload and rich widget library make development delightful.
+          </p>
+          <p>
+            I'm particularly interested in creating engaging user experiences and exploring advanced features like
+            animations, custom gestures, and platform-specific integrations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

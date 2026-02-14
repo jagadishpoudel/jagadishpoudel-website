@@ -1,304 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Jagadish Poudel</title>
-  <link rel="icon" type="image" href="img\head.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jagadish Poudel - Flutter Developer & App Enthusiast</title>
+  <meta name="description" content="Portfolio of Jagadish Poudel, a passionate Flutter developer from Nepal" />
+  <meta property="og:title" content="Jagadish Poudel" />
+  <meta property="og:description" content="Passionate Flutter developer from Nepal" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="src/assets/me.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="src/assets/me.jpeg" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <!-- Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="#hero">
-            <h1><span>J</span>agadish <span>P</span>oudel</h1>
-          </a>
-        </div>
-        <div class="nav-list">
-          <div class="hamburger">
-            <div class="bar"></div>
-          </div>
-          <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#services" data-after="Service">Services</a></li>
-            <li><a href="#projects" data-after="Projects">Projects</a></li>
-            <li><a href="#skills" data-after="Skills">My Skills</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
-          </ul>
-        </div>
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">JP</a>
+      
+      <div class="navbar-menu">
+        <a href="index.html" class="nav-link active" onclick="closeMenu()">Home</a>
+        <a href="about.html" class="nav-link" onclick="closeMenu()">About</a>
+        <a href="projects.html" class="nav-link" onclick="closeMenu()">Projects</a>
+        <a href="experience.html" class="nav-link" onclick="closeMenu()">Experience</a>
+        <a href="contact.html" class="nav-link" onclick="closeMenu()">Contact</a>
+        <a href="public/cv_jagadish.pdf" class="resume-btn" target="_blank" rel="noopener noreferrer">Resume ↗</a>
       </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
     </div>
-  </section>
-  <!-- End Header -->
+  </nav>
 
+  <!-- Home Section -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-title">
+          <h1 class="stagger-text">
+            <span>Flutter Developer &</span>
+            <span>App Enthusiast</span>
+          </h1>
+        </div>
 
-  <!-- Hero Section  -->
-  <section id="hero">
-    <div class="hero container">
-      <div>
-        <h1>Hello, <span></span></h1>
-        <h1>I am <span></span></h1>
-        <h1>Jagadish <span></span></h1>
-        <a href="#projects" type="button" class="cta">Portfolio</a>
-      </div>
-    </div>
-  </section>
-  <!-- End Hero Section  -->
+        <div class="hero-subtitle">
+          <p class="fade-in-line">Hi, I'm <span class="highlight">Jagadish Poudel</span>!</p>
+          <p class="fade-in-line">– a passionate Flutter developer</p>
+          <p class="fade-in-line">– a BSc.CSIT student from Nepal</p>
+          <p class="fade-in-line">– a mentor & community builder</p>
+        </div>
 
-  <!-- Service Section -->
-  <section id="services">
-    <div class="services container">
-      <div class="service-top">
-        <h1 class="section-title">Serv<span>i</span>ces</h1>
-        <p>Custom Website design, 
-          Mobile app development for iOS and Android platforms, 
-          Custom app design and development, 
-          UI/UX design for mobile apps,
-          UI/UX design for websites, 
-          Mobile app testing and quality assurance, 
-          Integration of third-party APIs and services, 
-          Cross-platform app development, 
-          App migration and upgrade services, 
-          Consultation and advice on mobile app strategy and development.</p>
-      </div>
-      <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Web Design</h2>
-          <p>Custom design, responsive layout, and SEO optimization for your website.</p>
+        <div class="hero-cta">
+          <a href="projects.html" class="cta-button">See My Work →</a>
         </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>UI/UX Design</h2>
-          <p>Intuitive and visually appealing user interfaces that cater to your target audience's needs and preferences.</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>App Design</h2>
-          <p>Visually appealing and easy-to-use mobile app designs that delight users and meet your business objectives.</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>App Development</h2>
-          <p>Custom mobile app development using the latest programming languages, frameworks, and development tools.</p>
+
+        <div class="hero-socials">
+          <a href="https://github.com/jagadishpoudel" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+          <span class="social-divider">/</span>
+          <a href="https://www.linkedin.com/in/jagadish-poudel/" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+          <span class="social-divider">/</span>
+          <a href="https://play.google.com/store/apps/dev?id=4658001568577208018" target="_blank" rel="noopener noreferrer" class="social-link">Play Store</a>
+          <span class="social-divider">/</span>
+          <a href="https://www.youtube.com/@codingwithjagadish" target="_blank" rel="noopener noreferrer" class="social-link">YouTube</a>
+          <span class="social-divider">/</span>
+          <a href="mailto:jpoudel974@gmail.com" class="social-link">Email</a>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- End Service Section -->
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Calculator App</h1>
-            <h2>Simple calculator app</h2>
-            <p>I've developed a simple Calculator App using Flutter, and the code is uploaded on GitHub. You can try it out.</p><br>
-              <p>GitHub - <a style="color: red;" href="https://github.com/jagadishpoudel/Calculator_app_flutter_project?fbclid=IwAR2NtSmFankipM_aN9XV00thHQWZnrjM5mRJFp30a-1ZiSqvEPRU_mLlQas">Click here!</a> </p><br>
-              <p>LinkedIn - <a style="color: red;" href="https://www.linkedin.com/posts/jagadish-poudel-705073217_flutter-dart-mobileappdeveloper-activity-7119914858879332352-awZ4?utm_source=share&utm_medium=member_desktop">Click here!</a></p> <br>
-             
-              <p style="
-              color: green;
-              font-weight: 600;">And don't forget to rate and provide feedback! 🙋🏻‍♂️</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/Calculator_app.png" alt="img">
-          </div>
+      <div class="hero-image">
+        <div class="profile-circle">
+          <img src="src/assets/me.jpeg" alt="Jagadish Poudel" class="profile-img" onerror="this.style.display='none'">
         </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>CSIT Paper Pro</h1>
-            <h2>BSc.CSIT - Past questions with answer and Sylllabus</h2>
-            <p>A must-have app for BSc.CSIT students. Access a comprehensive database of old exam papers,  their answers and subject based syllabus, all in one place. Contribute your own solutions and study offline. Download now and prepare for your exams with CSIT Paper Pro!            </p><br>
-              <p>Google PlayStore - <a style="color: red;" href="https://play.google.com/store/apps/details?id=com.jagabyte.oldqna_csit">Click here to Download!</a></p> <br>
-             
-              <p style="
-              color: green;
-              font-weight: 600;">And don't forget to rate and provide feedback! 🙋🏻‍♂️</p>
+
+        <div class="terminal-box">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-label">terminal</span>
           </div>
-          <div class="project-img">
-            <img src="./img/csit_paper_pro.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 3</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 4</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 5</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
+          <div class="terminal-content">
+            <p class="terminal-line terminal-opacity">$ flutter build apk</p>
+            <p class="terminal-line terminal-success" id="terminalOutput" style="opacity: 0;">> Building Amazing App<span class="animated-dots">.</span></p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- End Projects Section -->
 
-
-  <!-- Skills Section -->
-  <section id="skills">
-    <div class="skills container">
-      <div class="col-left">
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">My <span>Skills</span></h1>
-        <h2>Mobile App Developer, UI/UX Designer and Web Designer</h2>
-        <table class="table">
-          <thead>
-              <tr>
-                  <th><div class="skills_img">
-                    <img src="img\skills copy\icons8-adobe-photoshop-240.png" alt="Html">
-                    <img src="img\skills copy\icons8-adobe-xd-240.png" alt="Html">
-                    <img src="img\skills copy\icons8-figma-240.png" alt="Html">
-                  </div></th>
-                  <th><div class="skills_img">
-                    <img src="img\skills copy\icons8-c-programming-240.png" alt="Html">
-                    <img src="img\skills copy\icons8-c++-240.png" alt="Html">
-                    <img src="img\skills copy\icons8-python-240.png" alt="Html">
-                  </div></th>
-                  <th><div class="skills_img">
-                    <img src="img\skills copy\icons8-html-5-240.png" alt="Html">
-                    <img src="img\skills copy\icons8-css3-240.png" alt="Html">
-                    <img src="img\skills copy\icons8-javascript-240.png" alt="Html">
-                  </div></th>
-                  <th><div class="skills_img">
-                    <img src="img\skills copy\icons8-dart-240.png" alt="Html">
-                    <img src="img\skills copy\icons8-flutter-240.png" alt="Html">
-                    <img src="img\skills copy\icons8-firebase-240.png" alt="Html">
-                  </div></th>
-              </tr>
-          </thead>
-      </table>
-    </div>
-  </section>
-  <!-- End Skills Section -->
-
-  
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="./img/img-2.png" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>Mobile App Developer, UI/UX Designer and Web Designer</h2>
-        <p>"Hi, I'm Jagadish Poudel, a multi-professional with expertise in mobile app development, UI/UX design, and web design. I can create custom mobile apps that run seamlessly on iOS and Android devices, visually appealing and intuitive app designs, and stunning websites that engage your audience. With my unique blend of skills, I can deliver exceptional digital experiences that cater to your users' needs and preferences. Let's work together to bring your digital vision to life!"</p>
-        <a href="#" class="cta">Download Resume</a>
-      </div>
-    </div>
-  </section>
-  <!-- End About Section -->
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact container">
-      <div>
-        <h1 class="section-title">Contact <span>info</span></h1>
-      </div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
-          <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+977 9866634875</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>jpoudel974@gmail.com</h2>
-            <h2>Jagadish Poudel</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
-          <div class="contact-info">
-            <h1>Address</h1>
-            <h2>Kathmandu, Nepal</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Contact Section -->
-
-  <!-- Footer -->
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand">
-        <h1><span>J</span>agadish <span>P</span>oudel</h1>
-      </div>
-      <h2>Your Complete Mobile App and Designing Solution.</h2>
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="https://www.facebook.com/jagadishpoudel974/"><img src="img\social connect\icons8-facebook-240.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="https://www.instagram.com/jagadish_poudel/"><img src="img\social connect\icons8-instagram-240.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="https://twitter.com/JagadishPoudel8"><img src="img\social connect\icons8-twitter-circled-240.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="https://www.tiktok.com/@jagadishpoudel974"><img src="img\social connect\icons8-tiktok-240.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="https://www.youtube.com/@codingwithjagadish"><img src="img\social connect\icons8-youtube-240.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="https://www.linkedin.com/in/jagadish-poudel-705073217/"><img src="img\social connect\icons8-linkedin-240.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="https://github.com/jagadishpoudel"><img src="img\social connect\icons8-github-240.png" /></a>
-        </div>
-      </div>
-      <p>Copyright © 2025 Jagadish. All rights reserved <span class="privacy_policy"><a href="privacy_policy.html" class="privacy_policy">Privacy Policy</a></span></p>
-    </div>
-  </section>
-  <!-- End Footer -->
-  <script src="./app.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>

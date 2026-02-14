@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Jagadish Poudel</title>
+  <meta name="description" content="Projects by Jagadish Poudel - Flutter Developer" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">JP</a>
+      
+      <div class="navbar-menu">
+        <a href="index.html" class="nav-link" onclick="closeMenu()">Home</a>
+        <a href="about.html" class="nav-link" onclick="closeMenu()">About</a>
+        <a href="projects.html" class="nav-link active" onclick="closeMenu()">Projects</a>
+        <a href="experience.html" class="nav-link" onclick="closeMenu()">Experience</a>
+        <a href="contact.html" class="nav-link" onclick="closeMenu()">Contact</a>
+        <a href="public/cv_jagadish.pdf" class="resume-btn" target="_blank" rel="noopener noreferrer">Resume ↗</a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Projects Section -->
+  <section class="projects-section">
+    <div class="container">
+      <h1 class="section-title">Projects</h1>
+      <p class="section-subtitle fade-in-on-scroll">A showcase of my Flutter and web development work</p>
+
+      <div class="projects-grid">
+        <!-- Project 1: CSIT Paper Pro -->
+        <div class="project-card fade-in-on-scroll">
+          <div class="project-image">
+            <img src="src/assets/csitpaperpro.png" alt="CSIT Paper Pro" class="project-img" onerror="this.parentElement.classList.add('no-image-fallback')">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">CSIT Paper Pro</h3>
+            <p class="project-description">
+              Past papers with solutions and complete syllabus for BSc.CSIT students. Features Google Sign-In, guest mode, and answer contribution.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Provider</span>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.jagabyte.oldqna_csit" target="_blank" rel="noopener noreferrer" class="project-link">
+              ▶ Google Play
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: BCA Paper Pro -->
+        <div class="project-card fade-in-on-scroll">
+          <div class="project-image">
+            <img src="src/assets/bcapaperpro.png" alt="BCA Paper Pro" class="project-img" onerror="this.parentElement.classList.add('no-image-fallback')">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">BCA Paper Pro</h3>
+            <p class="project-description">
+              Past papers with solutions for BCA students with Google Sign-In, guest mode, and community-driven answer contributions.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Riverpod</span>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.jagabyte.bca_paper_pro" target="_blank" rel="noopener noreferrer" class="project-link">
+              ▶ Google Play
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: Flutter Handbook -->
+        <div class="project-card fade-in-on-scroll">
+          <div class="project-image">
+            <img src="src/assets/flutterhandbook.png" alt="Flutter Handbook" class="project-img" onerror="this.parentElement.classList.add('no-image-fallback')">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Flutter Handbook</h3>
+            <p class="project-description">
+              A structured Flutter learning app with complete documentation, code previews and video tutorials for beginners to advanced learners.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Dart</span>
+              <span class="tag">Education</span>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.jagabyte.flutter_handbook" target="_blank" rel="noopener noreferrer" class="project-link">
+              ▶ Google Play
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: Bijuli Bazzar -->
+        <div class="project-card fade-in-on-scroll">
+          <div class="project-image no-image">
+            <span class="emoji-placeholder">🛒</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Bijuli Bazzar</h3>
+            <p class="project-description">
+              Full-featured e-commerce app with real-time order tracking, push notifications, payment system, and admin dashboard.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Riverpod</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Cloud Functions</span>
+            </div>
+            <a href="https://github.com/jagadishpoudel/Bijuli_Bazzar.git" target="_blank" rel="noopener noreferrer" class="project-link">
+              ⌘ GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

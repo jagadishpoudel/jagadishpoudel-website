@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Jagadish Poudel</title>
+  <meta name="description" content="Contact - Jagadish Poudel" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">JP</a>
+      
+      <div class="navbar-menu">
+        <a href="index.html" class="nav-link" onclick="closeMenu()">Home</a>
+        <a href="about.html" class="nav-link" onclick="closeMenu()">About</a>
+        <a href="projects.html" class="nav-link" onclick="closeMenu()">Projects</a>
+        <a href="experience.html" class="nav-link" onclick="closeMenu()">Experience</a>
+        <a href="contact.html" class="nav-link active" onclick="closeMenu()">Contact</a>
+        <a href="public/cv_jagadish.pdf" class="resume-btn" target="_blank" rel="noopener noreferrer">Resume ↗</a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-content">
+        <h1 class="section-title">Let's Connect</h1>
+        <p class="section-subtitle fade-in-on-scroll">
+          I'm always open to new opportunities, collaborations, or just a friendly chat about Flutter and mobile development.
+        </p>
+
+        <div class="contact-cta fade-in-on-scroll">
+          <a href="mailto:jpoudel974@gmail.com" class="cta-button primary">Hire Me ✉</a>
+          <a href="public/cv_jagadish.pdf" target="_blank" rel="noopener noreferrer" class="cta-button secondary">Download CV ↓</a>
+        </div>
+
+        <div class="contact-socials fade-in-on-scroll">
+          <a href="https://github.com/jagadishpoudel" target="_blank" rel="noopener noreferrer" class="social-link-contact">GitHub</a>
+          <a href="https://www.linkedin.com/in/jagadish-poudel/" target="_blank" rel="noopener noreferrer" class="social-link-contact">LinkedIn</a>
+          <a href="https://play.google.com/store/apps/dev?id=4658001568577208018" target="_blank" rel="noopener noreferrer" class="social-link-contact">Play Store</a>
+          <a href="https://www.facebook.com/jagadishpoudel50" target="_blank" rel="noopener noreferrer" class="social-link-contact">Facebook</a>
+          <a href="https://www.youtube.com/@codingwithjagadish" target="_blank" rel="noopener noreferrer" class="social-link-contact">YouTube</a>
+          <a href="tel:+9779866634875" class="social-link-contact">+977 9866634875</a>
+        </div>
+
+        <div class="contact-footer fade-in-on-scroll">
+          <p>&copy; <span id="year"></span> Jagadish Poudel. Built with ❤️</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
