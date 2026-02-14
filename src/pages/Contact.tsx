@@ -12,7 +12,7 @@ const socials = [
 ];
 
 const Contact = () => {
-  const titleChars = "Contact".split("");
+  const titleChars = "Let's Connect".split("");
 
   const charVariants = {
     hidden: { opacity: 0, y: 50, rotateX: -90 },
@@ -77,7 +77,7 @@ const Contact = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Say Hello ✉
+              Hire Me ✉
             </motion.a>
             <motion.a
               href="/cv_jagadish.pdf"
@@ -118,7 +118,7 @@ const Contact = () => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            © {new Date().getFullYear()} Jagadish Poudel. Built with passion using React & Framer Motion.
+            © {new Date().getFullYear()} Jagadish Poudel. Built with ❤️
           </motion.div>
         </div>
       </div>
