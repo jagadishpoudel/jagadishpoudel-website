@@ -71,8 +71,7 @@ const Experience = () => {
                 custom={i}
                 variants={charVariants}
                 initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
+                animate="visible"
                 className="inline-block"
                 style={{ whiteSpace: char === " " ? "pre" : undefined }}
               >
