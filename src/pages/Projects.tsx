@@ -46,15 +46,14 @@ const Projects = () => {
     <div className="min-h-screen bg-background py-28 md:py-32 px-8 md:px-12 lg:px-16">
       <div className="max-w-6xl mx-auto">
         <div className="mb-16">
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-foreground mb-5 overflow-hidden">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-foreground mb-5 overflow-hidden">
             {titleChars.map((char, i) => (
               <motion.span
                 key={i}
                 custom={i}
                 variants={charVariants}
                 initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
+                animate="visible"
                 className="inline-block"
               >
                 {char}
