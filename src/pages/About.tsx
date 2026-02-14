@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const About = () => {
-  const titleChars = "About Me".split("");
+  const titleChars = "About".split("");
   const ease = [0.215, 0.61, 0.355, 1] as const;
 
   const charVariants = {

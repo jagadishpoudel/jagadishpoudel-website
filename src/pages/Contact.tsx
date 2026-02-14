@@ -12,7 +12,7 @@ const socials = [
 ];
 
 const Contact = () => {
-  const titleChars = "Let's Connect".split("");
+  const titleChars = "Contact".split("");
 
   const charVariants = {
     hidden: { opacity: 0, y: 50, rotateX: -90 },
