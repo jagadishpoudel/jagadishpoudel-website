@@ -789,6 +789,48 @@ section {
   transform: translateY(-2px);
 }
 
+.client-work-section {
+  margin-top: 5rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--border);
+}
+
+.client-work-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.client-work-eyebrow {
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.client-work-heading .subsection-title {
+  margin-bottom: 0;
+}
+
+.client-work-intro {
+  max-width: 26rem;
+  margin-bottom: 0.25rem;
+  color: var(--muted-foreground);
+  font-size: 0.95rem;
+}
+
+.client-work-grid {
+  grid-template-columns: minmax(0, 23rem);
+}
+
+.client-work-grid .project-card {
+  width: 100%;
+}
+
 /* ============= Experience Section ============= */
 .experience-section {
   background: var(--background);
@@ -1440,6 +1482,22 @@ body.dark .timeline-dot {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .client-work-section {
+    margin-top: 3.5rem;
+    padding-top: 2rem;
+  }
+
+  .client-work-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .client-work-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
   }
 
   .timeline::before {
